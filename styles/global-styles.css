@@ -1,0 +1,38 @@
+/*
+ *  FILE: global-style.css
+ *  DESCRIPTION:
+ *  - Imports the 'Schibdsted Grotesk' font.
+ *  - Defines global resets and base styles for the entire site.
+ *  - Sets up typography rules for headings, paragraphs, and links.
+ */
+
+/* =================================================================
+   FONT IMPORT & GLOBAL RESET
+   ================================================================= */
+   
+@import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
+
+/* Variables */
+:root {
+    --color-main-bg: #fff;
+    --color-accent: #4C5FD5; /* Links & Sign-In btn */
+    --color-hero-bg: #dadbf1;
+    --color-sandwich-bread: #000000; /* Header & Footer bg */
+}
+
+/* Apply to all elements */
+
+
+
+/* =================================================================
+   TYPOGRAPHY
+   ================================================================= */
+
+/* --- GENERAL LINKS --- */
+
+
+
+
+
+
+/* --- HEADINGS & PARAGRAPHS --- */
