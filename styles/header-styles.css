@@ -1,0 +1,61 @@
+/*
+ *  FILE: global-style.css
+ *  DESCRIPTION:
+ *  - Defines styles for the header.
+*/
+
+/* =================================================================
+       HIDDEN
+   ================================================================= */
+
+.menu {
+    display: none;
+}
+
+
+/* =================================================================
+        BACKGROUND, COLORS, & GENERAL LAYOUT
+   ================================================================= */
+
+header {
+    padding: 1.65rem 0.9rem 1.65rem 0.9rem;
+    background-color: var(--color-sandwich-bread);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+a, p, h2, h3 {
+    color: var(--color-main-bg);
+}
+
+
+/* =================================================================
+        WEBSITE TITLE & NAV
+   ================================================================= */
+
+/* --- RIGHT-SIDE HEADER --- */
+.title-left, .web-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.web-logo {
+    width: 35px;
+    background-color: #fff;
+    border-radius: 35%;
+    padding: 5px;
+}
+
+/* --- LEFT-SIDE NAV --- */
+.mobile-menu {
+    display: flex;
+    align-items: center;
+}
+.mobile-menu button {
+    background-color: transparent;
+    border: none;
+}
+.mobile-menu img {
+    width: 30px;
+    height: 30px;
+}

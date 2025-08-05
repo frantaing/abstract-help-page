@@ -4,6 +4,7 @@
  *  - Imports the 'Schibdsted Grotesk' font.
  *  - Defines global resets and base styles for the entire site.
  *  - Sets up typography rules for headings, paragraphs, and links.
+ *  - Sets up general images and icons.
  */
 
 /* =================================================================
@@ -12,16 +13,28 @@
    
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* Variables */
+/* VARIABLES */
 :root {
-    --color-main-bg: #fff;
-    --color-accent: #4C5FD5; /* Links & Sign-In btn */
-    --color-hero-bg: #dadbf1;
-    --color-sandwich-bread: #000000; /* Header & Footer bg */
+   /* COLORS */
+   --color-main-bg: #fff;
+   --color-accent: #4C5FD5; /* Links & Sign-In btn */
+   --color-hero-bg: #dadbf1;
+   --color-sandwich-bread: #000000; /* Header & Footer bg */
+
+   /* FONT PROPERTIES */
+   --font: 'Schibsted Grotesk';
+   --font-heading-bold-weight: 650;
+   --font-default-weight: 400;
+   --font-default-size: 24px;
 }
 
-/* Apply to all elements */
-
+/* APPLY TO ALL */
+* {
+   margin: 0;
+   box-sizing: border-box;
+   font-family: var(--font);
+   overflow-x: hidden;
+}
 
 
 /* =================================================================
@@ -29,10 +42,29 @@
    ================================================================= */
 
 /* --- GENERAL LINKS --- */
-
-
-
-
-
+a {
+   text-decoration: none;
+}
 
 /* --- HEADINGS & PARAGRAPHS --- */
+h1 {
+   font-weight: var(--font-default-weight);
+}
+h2 {
+   font-size: var(--font-default-size);
+   font-weight: var(--font-heading-bold-weight);
+}
+h3 {
+   font-size: var(--font-default-size);
+   font-weight: var(--font-default-weight);
+}
+
+
+/* =================================================================
+   ICONS & IMAGES [RETIRE THIS!]
+   ================================================================= */
+
+/* MAIN ICONS */
+.item-icon {
+   width: 150px;
+}

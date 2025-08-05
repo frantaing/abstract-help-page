@@ -1,0 +1,18 @@
+/*
+ *  FILE: footer-style.css
+ *  DESCRIPTION:
+ *  - Defines styles for the footer.
+*/
+
+/* =================================================================
+       BACKGROUND, COLORS, & GENERAL LAYOUT
+   ================================================================= */
+
+footer {
+    background-color: var(--color-sandwich-bread);
+}
+a, p, h2, h3 {
+    color: var(--color-main-bg);
+}
+
+
