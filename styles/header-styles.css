@@ -12,7 +12,22 @@
     display: none;
 }
 .mobile-menu-items {
-    display: none;
+    /* DISPLAY SET TO HIDDEN.*/
+    display: none; /* CHANGE TO [FLEX] IN JS!! */
+    /* LAYOUT */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3.5rem 3.5rem;
+    gap: 1.5rem;
+    /* VISUALS */
+    background-color: var(--color-sandwich-bread);
+    font-size: var(--font-default-size);
+    border-top: 1px #fff solid;
+}
+.mobile-menu-items a:first-child { /* SEPARATOR */
+    border-bottom: 1px #fff solid;
+    padding-bottom: 1.5rem;
 }
 
 
