@@ -25,7 +25,7 @@
    --font: 'Schibsted Grotesk';
    --font-heading-bold-weight: 650;
    --font-default-weight: 400;
-   --font-default-size: 24px;
+   --font-default-size: 22px;
 }
 
 /* APPLY TO ALL */
@@ -57,6 +57,9 @@ h2 {
 h3 {
    font-size: var(--font-default-size);
    font-weight: var(--font-default-weight);
+}
+h1, h2, h3 {
+   letter-spacing: -1px;
 }
 
 

@@ -1,0 +1,16 @@
+/*
+ *  FILE: index-style.css
+ *  DESCRIPTION:
+ *  - Defines styles for the header.
+*/
+
+/* =================================================================
+        BACKGROUND, COLORS, & GENERAL LAYOUT
+   ================================================================= */
+
+main a, 
+main p, 
+main h2, 
+main h3 {
+    color: var(--color-sandwich-bread);
+}

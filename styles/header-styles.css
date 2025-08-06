@@ -1,5 +1,5 @@
 /*
- *  FILE: global-style.css
+ *  FILE: header-style.css
  *  DESCRIPTION:
  *  - Defines styles for the header.
 */
@@ -11,6 +11,9 @@
 .menu {
     display: none;
 }
+.mobile-menu-items {
+    display: none;
+}
 
 
 /* =================================================================
@@ -18,13 +21,17 @@
    ================================================================= */
 
 header {
-    padding: 1.65rem 0.9rem 1.65rem 0.9rem;
+    padding: 1.5rem 0.6rem 1.5rem 0.6rem;
     background-color: var(--color-sandwich-bread);
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-a, p, h2, h3 {
+header a, 
+header p, 
+header h2, 
+header h3, 
+header span {
     color: var(--color-main-bg);
 }
 
@@ -34,17 +41,22 @@ a, p, h2, h3 {
    ================================================================= */
 
 /* --- RIGHT-SIDE HEADER --- */
+.web-logo {
+    width: 33px;
+    background-color: #fff;
+    border-radius: 35%;
+    padding: 5px;
+}
 .title-left, .web-title {
     display: flex;
     align-items: center;
     gap: 0.5rem;
 }
-.web-logo {
-    width: 35px;
-    background-color: #fff;
-    border-radius: 35%;
-    padding: 5px;
+.title-left h3 { /* SEPARATOR */
+    padding-left: 5px;
+    border-left: 1px solid #fff;
 }
+
 
 /* --- LEFT-SIDE NAV --- */
 .mobile-menu {
@@ -56,6 +68,6 @@ a, p, h2, h3 {
     border: none;
 }
 .mobile-menu img {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
