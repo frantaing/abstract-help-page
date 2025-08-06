@@ -53,9 +53,9 @@ this is **a work in progress**. pray i finish it 🙏
 #### page structure (HTML)
 - [] build the header (mobile)
 - [] build the header (desktop)
-- [] build the hero(?) (the section prior to the main section)
-- [] build the main content
-- [] build the footer
+- [X] build the hero(?) banner (the section prior to the main section)
+- [X] build the main content
+- [X] build the footer
 
 
 #### styling (CSS)
