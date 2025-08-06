@@ -4,41 +4,14 @@
  *  - Defines styles for the header.
 */
 
-/* =================================================================
-       HIDDEN
-   ================================================================= */
-
-.menu {
-    display: none;
-}
-
-/* HAM MENU */
-.mobile-menu-items {
-    /* DISPLAY SET TO HIDDEN.*/
-    display: none; /* CHANGE TO [FLEX] IN JS!! */
-    /* LAYOUT */
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-block: 3.5rem 3.5rem;
-    gap: 1.5rem;
-    /* VISUALS */
-    background-color: var(--color-sandwich-bread);
-    font-size: var(--font-default-size);
-    border-top: 1px #fff solid;
-}
-.mobile-menu-items a:first-child { /* SEPARATOR */
-    border-bottom: 1px #fff solid;
-    padding-bottom: 1.5rem;
-}
-
 
 /* =================================================================
         BACKGROUND, COLORS, & GENERAL LAYOUT
    ================================================================= */
 
 header {
-    padding: 1.5rem 0.6rem 1.5rem 0.6rem;
+    height: 6rem;
+    padding-inline: 0.6rem 0.6rem;
     background-color: var(--color-sandwich-bread);
     display: flex;
     align-items: center;
@@ -91,11 +64,77 @@ header span {
 
 
 /* =================================================================
+       HIDDEN
+   ================================================================= */
+
+/* HAM MENU */
+.mobile-menu-items {
+    /* DISPLAY SET TO HIDDEN.*/
+    display: none; /* CHANGE TO [FLEX] IN JS!! */
+    /* LAYOUT */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3.5rem 3.5rem;
+    gap: 1.5rem;
+    /* VISUALS */
+    background-color: var(--color-sandwich-bread);
+    font-size: var(--font-default-size);
+    border-top: 1px #fff solid;
+}
+.mobile-menu-items a:first-child { /* SEPARATOR */
+    border-bottom: 1px #fff solid;
+    padding-bottom: 1.5rem;
+}
+
+/* DESKTOP MENU */
+.menu {
+    /* DISPLAY SET TO HIDDEN.*/
+    display: none; /* CHANGE TO [FLEX] IN JS!! */
+}
+.menu .menu-search {
+    width: 250px;
+    border-radius: 10px;
+}
+.menu .menu-search input {
+    font-size: 20px;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    width: 100%;
+}
+.menu button {
+    color: #fff;
+    font-size: var(--font-default-size);
+    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    border-radius: 10px;
+}
+.btn-submit {
+    background-color: var(--color-sandwich-bread);
+    border: 1px #fff solid;
+}
+.btn-sign {
+    border: none;
+    background-color: var(--color-accent);
+}
+
+
+/* =================================================================
    DESKTOP HEADER & NAVIGATION (Large Screens)
    ================================================================= */
 
 @media screen and (min-width: 750px) { /* TABLETS; HEADER PADDING/CENTERING */
     header {
-        padding: 1.5rem calc(2rem + 5%) 1.5rem calc(2rem + 5%);
+        padding-inline: calc(2rem + 5%) calc(2rem + 5%);
+    }
+}
+
+@media screen and (min-width: 1200px) { /* DESKTOP; SHOW DESKTOP MENU */
+    /* HIDE MOBILE-MENU, SHOW DESKTOP MENU */
+    .mobile-menu {
+        display: none;
+    }
+    .menu {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
     }
 }

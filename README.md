@@ -59,8 +59,8 @@ this is **a work in progress**. pray i finish it 🙏
 
 
 #### styling (CSS)
-- [] style the header (mobile)
-- [] style the header (larger screens)
+- [X] style the header (mobile)
+- [X] style the header (desktops)
 - [] style the main content (mobile/desktop)
 - [] style the footer
 - [] hover states, animations, etc
