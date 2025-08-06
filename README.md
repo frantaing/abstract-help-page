@@ -51,8 +51,8 @@ no frameworks or tooling (e.g., no React, Tailwind, or Webpack)
 this is **a work in progress**. pray i finish it 🙏
 
 #### page structure (HTML)
-- [] build the header (mobile)
-- [] build the header (desktop)
+- [X] build the header (mobile)
+- [X] build the header (desktop)
 - [X] build the hero(?) banner (the section prior to the main section)
 - [X] build the main content
 - [X] build the footer
