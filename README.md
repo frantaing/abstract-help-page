@@ -42,7 +42,7 @@ no frameworks or tooling (e.g., no React, Tailwind, or Webpack)
 - the [Abstract website](https://help.goabstract.com/hc/en-us)
 - for images: [pexels](https://www.pexels.com/) and [unsplash](https://unsplash.com/)
 - for the website logo: [boxicons](https://boxicons.com/)
-- for the colored icons: icons by [freepik](https://www.flaticon.com/authors/freepik) from [flaticon](https://www.flaticon.com/)
+- for the colored icons: [flaticon](https://www.flaticon.com/)
 
 <br>
 

@@ -70,11 +70,12 @@ main h3 {
     display: grid;
     grid-template-columns: 1fr;
     gap: 5rem;
-    padding: 7rem 1.15rem 7rem 1.15rem;
+    padding: 6.5rem 1.15rem 6.5rem 1.15rem;
 }
 /* GRID ITEM */
 .content-item {
     display: flex;
+    align-items: start;
     gap: 1rem;
 }
 .content-text {
@@ -94,6 +95,7 @@ main h3 {
     width: 10rem;
     aspect-ratio: 1 / 1;
     object-fit: contain;
+    
 }
 
 
