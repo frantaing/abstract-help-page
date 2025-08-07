@@ -21,18 +21,21 @@ main h3 {
    ================================================================= */
 
 /* CENTERED */
-.hero-banner, .hero-content {
-    /* VISUAL */
+.hero-banner {
     background-color: var(--color-hero-bg);
-    /* LAYOUT */
+    padding: 5rem 1rem 7rem 1rem;
+}
+
+/* HERO-CONTENT */
+.hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-}
-.hero-banner { /* PADDING */
-    padding: 5rem 0rem 7rem 0rem;
+    width: 100%;
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
 /* HERO-CONTENT ITEMS */
@@ -42,7 +45,7 @@ main h3 {
 .hero-search input {
     width: 100%;
     font-size: 20px;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1.25rem 1rem 1.25rem 1rem;
     border: 1px #000 solid;
     border-radius: 4px;
     /* SEARCH ARROW ICON */
@@ -55,4 +58,31 @@ main h3 {
 }
 .hero-search input:focus {
     border: 1px var(--color-accent) solid;
+}
+
+
+/* =================================================================
+        MEDIA
+   ================================================================= */
+
+@media screen and (min-width: 500px) { /* BIG HERO HEADING + MAIN SPACING */
+    /* MAKE HERO HEADING BIG */
+    .hero-content h1 {
+        font-size: 3.3rem;
+    }
+}
+
+@media screen and (min-width: 800px) { /* TABLETS; BIGGER HERO HEADING + FIXED SEARHBAR WIDTH */
+    /* MAKE HERO HEADING BIGGER */
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
+    /* NARROWER GAP */
+    .hero-banner, .hero-content {
+        gap: 2.15rem;
+    }
+    /* FIXED SEARCHBAR WIDTH */
+    .hero-search {
+        max-width: 47rem;
+    }
 }

@@ -124,7 +124,7 @@ header span {
 
 
 /* =================================================================
-   DESKTOP HEADER & NAVIGATION (Large Screens)
+    MEDIA QUERIES
    ================================================================= */
 
 @media screen and (min-width: 750px) { /* TABLETS; HEADER PADDING/CENTERING */
