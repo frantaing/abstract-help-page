@@ -10,8 +10,8 @@
    ================================================================= */
 
 header {
-    height: 6rem;
-    padding-inline: 0.6rem 0.6rem;
+    height: 5.5rem;
+    padding-inline: 0.8rem 0.8rem;
     background-color: var(--color-sandwich-bread);
     display: flex;
     align-items: center;
