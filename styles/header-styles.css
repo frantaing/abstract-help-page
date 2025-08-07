@@ -112,8 +112,14 @@ header span {
     border: 1px #fff solid;
 }
 .btn-sign {
+    cursor: pointer;
     border: none;
     background-color: var(--color-accent);
+    transition: 0.3s ease;
+}
+.btn-sign:hover {
+    background-color: #fff;
+    color: #000;
 }
 
 
