@@ -14,3 +14,45 @@ main h2,
 main h3 {
     color: var(--color-sandwich-bread);
 }
+
+
+/* =================================================================
+        HERO BANNER
+   ================================================================= */
+
+/* CENTERED */
+.hero-banner, .hero-content {
+    /* VISUAL */
+    background-color: var(--color-hero-bg);
+    /* LAYOUT */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+.hero-banner { /* PADDING */
+    padding: 5rem 0rem 7rem 0rem;
+}
+
+/* HERO-CONTENT ITEMS */
+.hero-search {
+    width: 90vw;
+}
+.hero-search input {
+    width: 100%;
+    font-size: 20px;
+    padding: 1rem 1rem 1rem 1rem;
+    border: 1px #000 solid;
+    border-radius: 4px;
+    /* SEARCH ARROW ICON */
+    background-image: url('../assets/icons/main content/arrow-right-stroke.png');
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    background-size: 35px 35px;
+
+    transition: border 0.3s ease;
+}
+.hero-search input:focus {
+    border: 1px var(--color-accent) solid;
+}
