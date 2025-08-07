@@ -45,9 +45,13 @@
 /* --- GENERAL LINKS --- */
 a {
    text-decoration: none;
+   font-size: calc(var(--font-default-size) - 3px);
 }
 
 /* --- HEADINGS & PARAGRAPHS --- */
+p {
+   font-size: var(--font-default-size);
+}
 h1 {
    font-weight: var(--font-heading-hero-weight);
 }
@@ -61,14 +65,4 @@ h3 {
 }
 h1, h2, h3 {
    letter-spacing: -1px;
-}
-
-
-/* =================================================================
-      ICONS & IMAGES [RETIRE THIS!]
-   ================================================================= */
-
-/* MAIN ICONS */
-.item-icon {
-   width: 150px;
 }
