@@ -63,6 +63,7 @@ this is **a work in progress**. pray i finish it 🙏
 - [X] style the header (desktops)
 - [] style the main content (mobile/desktop)
 - [] style the footer
+- [] style the floating 'help' button
 - [] hover states, animations, etc
 
 #### interactivity (JS)

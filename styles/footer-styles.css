@@ -15,4 +15,7 @@ a, p, h2, h3 {
     color: var(--color-main-bg);
 }
 
-
+/* TEST */
+footer a {
+    font-size: var(--font-footer-size);
+}

@@ -88,6 +88,9 @@ main h3 {
 .content-text a {
     color: var(--color-accent);
 }
+.content-text a:hover {
+    text-decoration: underline;
+}
 
 
 /* GRID IMAGES */ /* PROBLEM! WEIRD SIZES, CHANGE ICONS? */
@@ -110,6 +113,35 @@ main h3 {
     width: 4rem;
     aspect-ratio: 1 / 1;
     object-fit: contain;
+}
+
+
+/* =================================================================
+        FLOATING HELP BUTTON
+   ================================================================= */
+
+.btn-help {
+    z-index: 999;
+    position: fixed;
+    bottom: 1.7%;
+    right: 4%;
+
+    border: none;
+    background-color: var(--color-accent);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1rem 0.7rem 1rem;
+    border-radius: 50px;
+
+    color: #fff;
+    font-size: var(--font-footer-size);
+    font-weight: var(--font-heading-bold-weight);
+}
+.btn-help img {
+    width: 25px;
 }
 
 
