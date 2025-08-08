@@ -30,7 +30,7 @@ header span {
         WEBSITE TITLE & NAV
    ================================================================= */
 
-/* --- RIGHT-SIDE HEADER --- */
+/* --- LEFT-SIDE HEADER --- */
 .web-logo {
     width: 33px;
     background-color: #fff;
@@ -46,9 +46,18 @@ header span {
     padding-left: 10px;
     border-left: 1px solid #fff;
 }
+.title-left h3:hover {
+    text-decoration: underline;
+}
+.web-title {
+    transition: 0.3s ease;
+}
+.web-title:hover {
+    cursor: pointer;
+    opacity: 80%;
+}
 
-
-/* --- LEFT-SIDE NAV --- */
+/* --- RIGHT-SIDE NAV --- */
 .mobile-menu {
     display: flex;
     align-items: center;
