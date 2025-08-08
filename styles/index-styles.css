@@ -96,7 +96,21 @@ main h3 {
     aspect-ratio: 1 / 1;
     object-fit: contain;
 }
-
+#weird-icon-billing {
+    width: 5rem;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+#weird-icon-key {
+    width: 8rem;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
+#weird-icon-chat {
+    width: 4rem;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+}
 
 
 
