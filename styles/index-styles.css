@@ -65,6 +65,11 @@ main h3 {
         MAIN CONTENT
    ================================================================= */
 
+main:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /* CONTENT GRID */
 .main-content {
     display: grid;
@@ -76,7 +81,7 @@ main h3 {
 .content-item {
     display: flex;
     align-items: start;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 .content-text {
     display: flex;
@@ -92,25 +97,9 @@ main h3 {
     text-decoration: underline;
 }
 
-
-/* GRID IMAGES */ /* PROBLEM! WEIRD SIZES, CHANGE ICONS? */
+/* GRID IMAGES */
 .item-icon {
-    width: 10rem;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-}
-#weird-icon-billing {
-    width: 5rem;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-}
-#weird-icon-key {
-    width: 8rem;
-    aspect-ratio: 1 / 1;
-    object-fit: contain;
-}
-#weird-icon-chat {
-    width: 4rem;
+    max-width: 5rem;
     aspect-ratio: 1 / 1;
     object-fit: contain;
 }
@@ -146,7 +135,6 @@ main h3 {
 
 
 
-
 /* =================================================================
         MEDIA QUERIES
    ================================================================= */
@@ -156,9 +144,13 @@ main h3 {
     .hero-content h1 {
         font-size: 3.3rem;
     }
+    /* MAIN CONTENT INLINE PADDING */
+    .main-content {
+        padding: 6.5rem 3.5rem 6.5rem 3.5rem;
+    }
 }
 
-@media screen and (min-width: 800px) { /* TABLETS; BIGGER HERO HEADING + FIXED SEARHBAR WIDTH */
+@media screen and (min-width: 800px) { /* TABLETS */
     /* MAKE HERO HEADING BIGGER */
     .hero-content h1 {
         font-size: 4.5rem;
@@ -170,5 +162,20 @@ main h3 {
     /* FIXED SEARCHBAR WIDTH */
     .hero-search {
         max-width: 47rem;
+    }
+    /* TWO COLUMN GRID */
+    .main-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+        padding-inline: cal;
+    }
+    /* GRID IMAGES */
+    .item-icon {
+        max-width: 4.5rem;
+    }
+    /* SIDE PADDING */
+    .main-wrapper {
+        border: red 1px solid;
     }
 }
