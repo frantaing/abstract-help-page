@@ -108,7 +108,7 @@ main h3 {
     z-index: 999;
     position: fixed;
     bottom: 1.7%;
-    right: 4%;
+    right: 1rem;
 
     border: none;
     background-color: var(--color-accent);
@@ -127,7 +127,6 @@ main h3 {
 .btn-help img {
     width: 25px;
 }
-
 
 
 /* =================================================================
