@@ -65,11 +65,6 @@ main h3 {
         MAIN CONTENT
    ================================================================= */
 
-main:last-child {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /* CONTENT GRID */
 .main-content {
     display: grid;
@@ -165,17 +160,16 @@ main:last-child {
     }
     /* TWO COLUMN GRID */
     .main-content {
+        max-width: 110rem;
+        margin: 0 auto;
+
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5rem;
-        padding-inline: cal;
+        padding: 6.5rem 5rem 6.5rem 5rem;
     }
     /* GRID IMAGES */
     .item-icon {
         max-width: 4.5rem;
-    }
-    /* SIDE PADDING */
-    .main-wrapper {
-        border: red 1px solid;
     }
 }
