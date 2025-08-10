@@ -50,8 +50,13 @@ footer:last-child {
 .footer-item a:hover {
     text-decoration: underline;
 }
+.footer-item h3 {
+    font-size: 17px;
+    font-weight: var(--font-heading-bold-weight);
+    padding-block: 2rem 0.2rem;
+}
 .copyright {
     width: 100%;
-    padding-top: 4rem;
+    padding-top: 2.3rem;
 }
 
