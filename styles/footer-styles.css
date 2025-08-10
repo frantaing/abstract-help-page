@@ -4,18 +4,54 @@
  *  - Defines styles for the footer.
 */
 
+
 /* =================================================================
-       BACKGROUND, COLORS, & GENERAL LAYOUT
+       TEXT
+   ================================================================= */
+
+footer p, 
+footer h2, 
+footer h3 {
+    color: var(--color-main-bg);
+}
+footer a {
+    font-size: var(--font-footer-size);
+    color: var(--color-main-bg);
+}
+.copyright p {
+    font-size: 20px;
+    padding-top: 1rem;
+}
+
+
+/* =================================================================
+       LAYOUT
    ================================================================= */
 
 footer {
     background-color: var(--color-sandwich-bread);
+    padding: 3rem 1rem 4rem 1rem;
 }
-a, p, h2, h3 {
-    color: var(--color-main-bg);
+.footer-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+footer:last-child {
+    width: 20rem;
+}
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+.footer-item h2 {
+    padding-bottom: 1rem;
+}
+.footer-item a:hover {
+    text-decoration: underline;
+}
+.copyright {
+    width: 100%;
+    padding-top: 4rem;
 }
 
-/* TEST */
-footer a {
-    font-size: var(--font-footer-size);
-}
