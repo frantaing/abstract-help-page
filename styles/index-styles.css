@@ -56,7 +56,7 @@ main h3 {
 
     transition: border 0.3s ease;
 }
-.hero-search input:focus {
+.hero-search input:focus, .hero-search input:hover {
     border: 1px var(--color-accent) solid;
 }
 
