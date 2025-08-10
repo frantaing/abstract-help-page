@@ -61,7 +61,7 @@ this is **a work in progress**. pray i finish it 🙏
 #### styling (CSS)
 - [X] style the header (mobile)
 - [X] style the header (desktops)
-- [] style the main content (mobile/desktop)
+- [X] style the main content (mobile/desktop)
 - [] style the footer
 - [X] style the floating 'help' button
 - [] hover states, animations, etc
