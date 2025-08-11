@@ -165,7 +165,7 @@ main h3 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5rem;
-        padding: 6.5rem 5rem 6.5rem 5rem;
+        padding: 10rem 5rem 6.5rem 5rem;
     }
     /* GRID IMAGES */
     .item-icon {

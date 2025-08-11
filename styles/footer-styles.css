@@ -118,15 +118,15 @@ footer:last-child {
         justify-content: start;
         align-items: start;
 
-        padding: 2rem 5rem 4rem 5rem;
+        padding: 2rem 5% 4rem 5%;
     }
     .footer-content {
         display: flex;
         flex-direction: row;
-        gap: 5%;
+        gap: 15%;
         padding-bottom: 2rem;
     }
     .copyright {
-        padding-top: 0;
+        padding-top: 12rem;
     }
 }
