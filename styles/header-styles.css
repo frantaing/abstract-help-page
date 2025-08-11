@@ -88,6 +88,9 @@ header span {
     /* DISPLAY SET TO HIDDEN.*/
     display: none; /* CHANGE TO [FLEX] IN JS!! */
     /* LAYOUT */
+    z-index: 999;
+    width: 100%;
+    position: absolute;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -96,7 +99,10 @@ header span {
     /* VISUALS */
     background-color: var(--color-sandwich-bread);
     font-size: var(--font-default-size);
-    border-top: 1px #fff solid;
+    color: #fff;
+}
+.mobile-menu-items a {
+    color: #fff;
 }
 .mobile-menu-items a:first-child { /* SEPARATOR */
     border-bottom: 1px #fff solid;
@@ -136,6 +142,55 @@ header span {
 .btn-sign:hover {
     background-color: #fff;
     color: #000;
+}
+
+
+/* =================================================================
+       HAMBURGER MENU & ICON STYLES
+   ================================================================= */
+
+/* HAMBURGER MENU VISIBILITY */
+.mobile-menu-items {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-block: 3.5rem 3.5rem;
+    gap: 1.5rem;
+    background-color: var(--color-sandwich-bread);
+    font-size: var(--font-default-size);
+    border-top: 1px #fff solid;
+}
+.mobile-menu-items.is-active {
+    display: flex;
+}
+
+/* ANIMATED HAMBURGER ICON */
+.ham-menu {
+  cursor: pointer;
+}
+.line {
+  stroke-width: 4;
+  stroke: #fff;
+  transition: all 300ms;
+}
+.top {
+  transform-origin: 26px 40px;
+}
+.middle {
+  stroke-dasharray: 60 60;
+}
+.bottom {
+  transform-origin: 26px 60px;
+}
+.ham-menu.is-active .top {
+  transform: rotate(45deg);
+}
+.ham-menu.is-active .middle {
+  stroke-opacity: 0;
+}
+.ham-menu.is-active .bottom {
+  transform: rotate(-45deg);
 }
 
 
