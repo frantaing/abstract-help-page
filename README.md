@@ -62,9 +62,9 @@ this is **a work in progress**. pray i finish it 🙏
 - [X] style the header (mobile)
 - [X] style the header (desktops)
 - [X] style the main content (mobile/desktop)
-- [] style the footer
+- [X] style the footer
 - [X] style the floating 'help' button
-- [] hover states, animations, etc
+- [X] hover states, animations, etc
 
 #### interactivity (JS)
 - [] header hamburger menu?
