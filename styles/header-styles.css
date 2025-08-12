@@ -68,8 +68,8 @@ header span {
     cursor: pointer;
 }
 .mobile-menu img {
-    width: 30px;
-    height: 30px;
+    width: 27px;
+    height: 27px;
 }
 .mobile-menu .menu-search {
     transition: 0.3s ease;
@@ -98,11 +98,14 @@ header span {
     gap: 1.5rem;
     /* VISUALS */
     background-color: var(--color-sandwich-bread);
-    font-size: var(--font-default-size);
-    color: #fff;
 }
 .mobile-menu-items a {
+    font-size: var(--font-default-size);
     color: #fff;
+    transition: 0.25s ease;
+}
+.mobile-menu-items a:hover {
+    opacity: 0.8;
 }
 .mobile-menu-items a:first-child { /* SEPARATOR */
     border-bottom: 1px #fff solid;
