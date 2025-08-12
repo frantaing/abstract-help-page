@@ -117,13 +117,12 @@ footer:last-child {
         flex-direction: row;
         justify-content: start;
         align-items: start;
-
-        padding: 2rem 5% 4rem 5%;
+        padding: 2rem 1rem 4rem 4rem;
     }
     .footer-content {
         display: flex;
         flex-direction: row;
-        gap: 15%;
+        gap: 7%;
         padding-bottom: 2rem;
     }
     .copyright {
