@@ -67,9 +67,8 @@ this is **a work in progress**. pray i finish it 🙏
 - [X] hover states, animations, etc
 
 #### interactivity (JS)
-- [] header hamburger menu?
-- [] header search?
-- [] main search? (figure this out lol)
+- [X] header hamburger menu?
+- [X] header search?
 
 #### final stuff
 - [] final code cleanup and commenting
