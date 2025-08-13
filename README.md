@@ -72,8 +72,8 @@ this is **a work in progress**. pray i finish it 🙏
 
 #### final stuff
 - [X] final code cleanup and commenting
-- [] deploy the site to Github Pages
-- [] add the live site link to the top of the README
+- [X] deploy the site to Github Pages
+- [X] add the live site link to the top of the README
 
 <br>
 
