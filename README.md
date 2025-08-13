@@ -71,7 +71,7 @@ this is **a work in progress**. pray i finish it 🙏
 - [X] header search?
 
 #### final stuff
-- [] final code cleanup and commenting
+- [X] final code cleanup and commenting
 - [] deploy the site to Github Pages
 - [] add the live site link to the top of the README
 
