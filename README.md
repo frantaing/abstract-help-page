@@ -2,7 +2,7 @@
 
 a responsive front-end recreation of the [Abstract](https://help.goabstract.com/hc/en-us) website help page. this is a self-directed challenge from [Frontend Practice](https://www.frontendpractice.com/projects/abstract) to improve my layout, design, and vanilla javascript skills. also, because it's fun.
 
-👉 *not available yet :(*
+👉 [Github Page](https://overuseofrem.github.io/abstract-help-page/)
 
 <br>
 
