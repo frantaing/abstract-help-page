@@ -55,16 +55,13 @@ a {
 p {
    font-size: var(--font-default-size);
 }
-
 h1 {
    font-weight: var(--font-heading-hero-weight);
 }
-
 h2 {
    font-size: var(--font-default-size);
    font-weight: var(--font-heading-bold-weight);
 }
-
 h3 {
    font-size: var(--font-default-size);
    font-weight: var(--font-default-weight);

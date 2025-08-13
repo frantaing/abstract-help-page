@@ -36,7 +36,6 @@ header span {
     align-items: center;
     gap: 0.7rem;
 }
-
 .web-logo {
     width: 33px;
     background-color: #fff;
@@ -49,15 +48,12 @@ header span {
     padding-left: 10px;
     border-left: 1px solid #fff;
 }
-
 .title-left h3:hover {
     text-decoration: underline;
 }
-
 .web-title {
     transition: opacity 0.3s ease;
 }
-
 .web-title:hover {
     cursor: pointer;
     opacity: 0.8;
@@ -69,22 +65,18 @@ header span {
     display: flex;
     align-items: center;
 }
-
 .mobile-menu button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
-
 .mobile-menu img {
     width: 27px;
     height: 27px;
 }
-
 .mobile-menu .menu-search {
     transition: transform 0.3s ease;
 }
-
 .mobile-menu .menu-search:hover {
     transform: scale(1.2);
 }
@@ -98,33 +90,28 @@ header span {
 .menu {
     display: none; /* Changed to 'flex' on desktop screens */
 }
-
 .menu .menu-search input {
     font-size: 20px;
     padding: 0.7rem 1rem;
     width: 250px;
     border-radius: 10px;
 }
-
 .menu button {
     color: #fff;
     font-size: var(--font-default-size);
     padding: 0.7rem 1.5rem;
     border-radius: 10px;
 }
-
 .btn-submit {
     background-color: var(--color-sandwich-bread);
     border: 1px #fff solid;
 }
-
 .btn-sign {
     cursor: pointer;
     border: none;
     background-color: var(--color-accent);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 .btn-sign:hover {
     background-color: #fff;
     color: #000;
@@ -144,17 +131,14 @@ header span {
     background-color: var(--color-sandwich-bread);
     border-top: 1px #fff solid;
 }
-
 .mobile-menu-items.is-active {
     display: flex; /* This class makes the menu visible */
 }
-
 .mobile-menu-items a {
     font-size: var(--font-default-size);
     color: #fff;
     transition: opacity 0.25s ease;
 }
-
 .mobile-menu-items a:hover {
     opacity: 0.8;
 }
@@ -179,11 +163,9 @@ header span {
     align-items: center;
     gap: 1rem;
 }
-
 .mobile-menu-search .menu-search {
     width: 80vw;
 }
-
 .mobile-menu-search .menu-search input {
     width: 100%;
     font-size: 20px;
@@ -191,19 +173,16 @@ header span {
     border: 1px #000 solid;
     border-radius: 4px;
 }
-
 .mobile-menu-search button {
     cursor: pointer;
     background-color: transparent;
     border: none;
 }
-
 .mobile-menu-search img {
     width: 16px;
     height: 16px;
     transition: transform 0.2s ease;
 }
-
 .mobile-menu-search img:hover {
     transform: scale(1.25);
 }
@@ -214,7 +193,6 @@ header span {
 .ham-menu {
   cursor: pointer;
 }
-
 .line {
   stroke-width: 4;
   stroke: #fff;
@@ -258,6 +236,7 @@ header span {
     .mobile-menu {
         display: none;
     }
+
     /* Show the full desktop menu */
     .menu {
         display: flex;

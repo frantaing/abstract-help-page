@@ -40,7 +40,6 @@ main h3 {
 .hero-search {
     width: 90vw;
 }
-
 .hero-search input {
     width: 100%;
     font-size: 20px;
@@ -89,11 +88,9 @@ main h3 {
     gap: 1.25rem;
     line-height: 2rem;
 }
-
 .content-text a {
     color: var(--color-accent);
 }
-
 .content-text a:hover {
     text-decoration: underline;
 }
@@ -128,7 +125,6 @@ main h3 {
     border-radius: 50px;
     border: none;
 }
-
 .btn-help img {
     width: 25px;
 }
