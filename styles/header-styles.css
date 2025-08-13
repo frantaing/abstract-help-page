@@ -1,22 +1,23 @@
 /*
- *  FILE: header-style.css
+ *  FILE: header-styles.css
  *  DESCRIPTION:
- *  - Defines styles for the header.
+ *  - Defines styles for the header, including desktop and mobile navigation.
 */
 
-
 /* =================================================================
-        BACKGROUND, COLORS, & GENERAL LAYOUT
+        HEADER CONTAINER & GENERAL STYLES
    ================================================================= */
 
 header {
-    height: 5.5rem;
-    padding-inline: 0.8rem 0.8rem;
     background-color: var(--color-sandwich-bread);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 5.5rem;
+    padding-inline: 0.8rem;
 }
+
+/* Text color for all elements inside the header */
 header a, 
 header p, 
 header h2, 
@@ -25,238 +26,239 @@ header span {
     color: var(--color-main-bg);
 }
 
-
 /* =================================================================
-        WEBSITE TITLE & NAV
+        HEADER CONTENT (LOGO, TITLE, NAV)
    ================================================================= */
 
-/* --- LEFT-SIDE HEADER --- */
+/* --- Left Side: Logo and Title --- */
+.title-left, .web-title {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+}
+
 .web-logo {
     width: 33px;
     background-color: #fff;
     border-radius: 35%;
     padding: 5px;
 }
-.title-left, .web-title {
-    display: flex;
-    align-items: center;
-    gap: 0.7rem;
-}
-.title-left h3 { /* SEPARATOR */
+
+/* Vertical separator line next to "Abstract" */
+.title-left h3 {
     padding-left: 10px;
     border-left: 1px solid #fff;
 }
+
 .title-left h3:hover {
     text-decoration: underline;
 }
+
 .web-title {
-    transition: 0.3s ease;
-}
-.web-title:hover {
-    cursor: pointer;
-    opacity: 80%;
+    transition: opacity 0.3s ease;
 }
 
-/* --- RIGHT-SIDE NAV --- */
+.web-title:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* --- Right Side: Mobile Navigation --- */
+/* This menu is visible on mobile by default */
 .mobile-menu {
     display: flex;
     align-items: center;
 }
+
 .mobile-menu button {
     background-color: transparent;
     border: none;
     cursor: pointer;
 }
+
 .mobile-menu img {
     width: 27px;
     height: 27px;
 }
+
 .mobile-menu .menu-search {
-    transition: 0.3s ease;
+    transition: transform 0.3s ease;
 }
+
 .mobile-menu .menu-search:hover {
     transform: scale(1.2);
 }
 
-
 /* =================================================================
-       HIDDEN
+       HIDDEN MENUS (Desktop and Mobile Dropdown)
+       - These are hidden by default and shown via JS or media queries.
    ================================================================= */
 
-/* HAM MENU */
-.mobile-menu-items {
-    /* DISPLAY SET TO HIDDEN.*/
-    display: none; /* CHANGE TO [FLEX] IN JS!! */
-    /* LAYOUT */
-    z-index: 999;
-    width: 100%;
-    position: absolute;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-block: 3.5rem 3.5rem;
-    gap: 1.5rem;
-    /* VISUALS */
-    background-color: var(--color-sandwich-bread);
-}
-.mobile-menu-items a {
-    font-size: var(--font-default-size);
-    color: #fff;
-    transition: 0.25s ease;
-}
-.mobile-menu-items a:hover {
-    opacity: 0.8;
-}
-.mobile-menu-items a:first-child { /* SEPARATOR */
-    border-bottom: 1px #fff solid;
-    padding-bottom: 1.5rem;
+/* --- Desktop Menu (Hidden on Mobile) --- */
+.menu {
+    display: none; /* Changed to 'flex' on desktop screens */
 }
 
-/* DESKTOP MENU */
-.menu {
-    /* DISPLAY SET TO HIDDEN.*/
-    display: none; /* CHANGE TO [FLEX] IN JS!! */
-}
-.menu .menu-search {
+.menu .menu-search input {
+    font-size: 20px;
+    padding: 0.7rem 1rem;
     width: 250px;
     border-radius: 10px;
 }
-.menu .menu-search input {
-    font-size: 20px;
-    padding: 0.7rem 1rem 0.7rem 1rem;
-    width: 100%;
-}
+
 .menu button {
     color: #fff;
     font-size: var(--font-default-size);
-    padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+    padding: 0.7rem 1.5rem;
     border-radius: 10px;
 }
+
 .btn-submit {
     background-color: var(--color-sandwich-bread);
     border: 1px #fff solid;
 }
+
 .btn-sign {
     cursor: pointer;
     border: none;
     background-color: var(--color-accent);
-    transition: 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 .btn-sign:hover {
     background-color: #fff;
     color: #000;
 }
 
-
-/* =================================================================
-       HAMBURGER MENU & ICON STYLES
-   ================================================================= */
-
-/* HAMBURGER MENU VISIBILITY */
+/* --- Mobile Hamburger Menu Dropdown (Hidden until toggled) --- */
 .mobile-menu-items {
-    display: none;
+    display: none; /* Toggled to 'flex' with JS class 'is-active' */
+    z-index: 999;
+    position: absolute;
+    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-block: 3.5rem 3.5rem;
     gap: 1.5rem;
+    padding-block: 3.5rem;
     background-color: var(--color-sandwich-bread);
-    font-size: var(--font-default-size);
     border-top: 1px #fff solid;
 }
+
 .mobile-menu-items.is-active {
-    display: flex;
+    display: flex; /* This class makes the menu visible */
 }
 
-/* ANIMATED HAMBURGER ICON */
-.ham-menu {
-  cursor: pointer;
-}
-.line {
-  stroke-width: 4;
-  stroke: #fff;
-  transition: all 300ms;
-}
-.top {
-  transform-origin: 26px 40px;
-}
-.middle {
-  stroke-dasharray: 60 60;
-}
-.bottom {
-  transform-origin: 26px 60px;
-}
-.ham-menu.is-active .top {
-  transform: rotate(45deg);
-}
-.ham-menu.is-active .middle {
-  stroke-opacity: 0;
-}
-.ham-menu.is-active .bottom {
-  transform: rotate(-45deg);
+.mobile-menu-items a {
+    font-size: var(--font-default-size);
+    color: #fff;
+    transition: opacity 0.25s ease;
 }
 
+.mobile-menu-items a:hover {
+    opacity: 0.8;
+}
 
-/* =================================================================
-       MOBILE SEARCH MENU
-   ================================================================= */
+/* Separator line for the first link */
+.mobile-menu-items a:first-child { 
+    border-bottom: 1px #fff solid;
+    padding-bottom: 1.5rem;
+}
 
-.mobile-menu-search { /* DISPLAY SET AS 'NONE'; SET TO 'FLEX' */
-    display: flex;
-
-    background-color: #fff;
-
-    z-index: 999;
+/* --- Mobile Search Overlay (Hidden until toggled) --- */
+.mobile-menu-search { 
+    display: none; /* Toggled to 'flex' with JS */
     position: absolute;
     top: 0;
     right: 0;
-
+    z-index: 999;
     width: 100%;
     height: 5.5rem;
+    background-color: #fff;
     justify-content: center;
     align-items: center;
     gap: 1rem;
 }
+
 .mobile-menu-search .menu-search {
     width: 80vw;
 }
+
 .mobile-menu-search .menu-search input {
     width: 100%;
     font-size: 20px;
-    padding: 0.75rem 1rem 0.75rem 1rem;
+    padding: 0.75rem 1rem;
     border: 1px #000 solid;
     border-radius: 4px;
 }
+
 .mobile-menu-search button {
     cursor: pointer;
     background-color: transparent;
     border: none;
 }
+
 .mobile-menu-search img {
     width: 16px;
     height: 16px;
-    transition: 0.2s ease;
+    transition: transform 0.2s ease;
 }
+
 .mobile-menu-search img:hover {
     transform: scale(1.25);
 }
 
+/* =================================================================
+       ANIMATED HAMBURGER ICON
+   ================================================================= */
+.ham-menu {
+  cursor: pointer;
+}
+
+.line {
+  stroke-width: 4;
+  stroke: #fff;
+  transition: all 300ms;
+}
+
+/* Set transform origins for rotation */
+.top {
+  transform-origin: 26px 40px;
+}
+.bottom {
+  transform-origin: 26px 60px;
+}
+
+/* Animation states when 'is-active' class is applied */
+.ham-menu.is-active .top {
+  transform: rotate(45deg); /* Top line rotates to form 'X' */
+}
+.ham-menu.is-active .middle {
+  stroke-opacity: 0; /* Middle line fades out */
+}
+.ham-menu.is-active .bottom {
+  transform: rotate(-45deg); /* Bottom line rotates to form 'X' */
+}
 
 /* =================================================================
-    MEDIA QUERIES
+        MEDIA QUERIES
    ================================================================= */
 
-@media screen and (min-width: 750px) { /* TABLETS; HEADER PADDING/CENTERING */
+/* For tablets and wider screens */
+@media screen and (min-width: 750px) {
+    /* Add more horizontal padding to the header */
     header {
-        padding-inline: calc(2rem + 5%) calc(2rem + 5%);
+        padding-inline: calc(2rem + 5%);
     }
 }
 
-@media screen and (min-width: 1200px) { /* DESKTOP; SHOW DESKTOP MENU */
-    /* HIDE MOBILE-MENU, SHOW DESKTOP MENU */
+/* For desktop screens */
+@media screen and (min-width: 1200px) {
+    /* Hide the mobile menu icons */
     .mobile-menu {
         display: none;
     }
+    /* Show the full desktop menu */
     .menu {
         display: flex;
         gap: 1rem;

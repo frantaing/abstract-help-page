@@ -1,117 +1,128 @@
 /*
- *  FILE: footer-style.css
+ *  FILE: footer-styles.css
  *  DESCRIPTION:
- *  - Defines styles for the footer.
+ *  - Defines styles for the site footer.
 */
 
-
 /* =================================================================
-       TEXT
+       FOOTER LAYOUT & TYPOGRAPHY
    ================================================================= */
+footer {
+    background-color: var(--color-sandwich-bread);
+    padding: 3rem 1rem 4rem;
+}
 
+/* Text colors */
 footer p, 
 footer h2, 
 footer h3 {
     color: var(--color-main-bg);
 }
+
 footer a {
     font-size: var(--font-footer-size);
     color: var(--color-main-bg);
 }
-.copyright p {
-    font-size: 20px;
-    padding-top: 1rem;
-}
 
-
-/* =================================================================
-       LAYOUT
-   ================================================================= */
-
-footer {
-    background-color: var(--color-sandwich-bread);
-    padding: 3rem 1rem 4rem 1rem;
-}
-footer:last-child {
-    width: 20rem;
-}
+/* Main footer link section */
 .footer-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr; /* Two-column grid on mobile */
     gap: 3rem;
 }
+
+/* Individual column of links */
 .footer-item {
     display: flex;
     flex-direction: column;
 }
-.footer-item a {
-    padding-bottom: 0.25rem;
-}
+
 .footer-item h2 {
     padding-bottom: 1rem;
 }
+
+.footer-item a {
+    padding-bottom: 0.25rem;
+}
+
 .footer-item a:hover {
     text-decoration: underline;
 }
+
+/* "Contact Us" sub-heading */
 .footer-item h3 {
     font-size: 17px;
     font-weight: var(--font-heading-bold-weight);
     padding-block: 2rem 0.2rem;
 }
+
+/* Copyright section */
 .copyright {
     width: 100%;
     padding-top: 2.3rem;
 }
 
+.copyright p {
+    font-size: 20px;
+    padding-top: 1rem;
+}
 
 /* =================================================================
         MEDIA QUERIES
    ================================================================= */
 
-@media screen and (min-width: 629px) { /* FOOTER LAYOUT*/
+/* For wide mobile and small tablets */
+@media screen and (min-width: 629px) {
+    /* Change footer to a flex row to align link grid and copyright side-by-side */
     footer {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: end;
-
-        padding: 3rem 1rem 4rem 1rem;
+        padding: 3rem 1rem 4rem;
     }
+
     .footer-content {
         width: 100%;
-        grid-template-columns: 25vw 25vw;
+        grid-template-columns: 25vw 25vw; /* Adjust column width */
         gap: 0;
         padding-bottom: 3rem;
     }
+
     .footer-item {
-        padding: 1.5rem 0rem 1rem 0rem;
+        padding: 1.5rem 0rem 1rem;
     }
+
     .copyright {
         width: 28rem;
         padding-top: 2rem;
     }
 }
 
-@media screen and (min-width: 769px) { /* FOOTER LAYOUT */
+/* For standard tablets */
+@media screen and (min-width: 769px) {
+    /* Revert to a column layout but with more padding */
     footer {
         display: flex;
         flex-direction: column;
         justify-content: start;
         align-items: start;
-
-        padding: 3rem 5rem 4rem 5rem;
+        padding: 3rem 5rem 4rem;
     }
+
     .footer-content {
         grid-template-columns: 1fr 1fr;
-        gap: 0;
         padding-bottom: 2rem;
     }
+
     .copyright {
         padding-top: 0;
     }
 }
 
-@media screen and (min-width: 1000px) { /* FOOTER LAYOUT */
+/* For desktops */
+@media screen and (min-width: 1000px) {
+    /* Change footer back to a row layout for wide screens */
     footer {
         display: flex;
         flex-direction: row;
@@ -119,12 +130,16 @@ footer:last-child {
         align-items: start;
         padding: 2rem 1rem 4rem 4rem;
     }
+
+    /* Change link grid to a flex row */
     .footer-content {
         display: flex;
         flex-direction: row;
         gap: 7%;
         padding-bottom: 2rem;
     }
+
+    /* Push copyright down to align with design */
     .copyright {
         padding-top: 12rem;
     }

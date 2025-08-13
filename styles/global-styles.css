@@ -1,69 +1,76 @@
 /*
- *  FILE: global-style.css
+ *  FILE: global-styles.css
  *  DESCRIPTION:
- *  - Imports the 'Schibdsted Grotesk' font.
+ *  - Imports the 'Schibsted Grotesk' font.
  *  - Defines global resets and base styles for the entire site.
- *  - Sets up typography rules for headings, paragraphs, and links.
- *  - Sets up general images and icons.
+ *  - Sets up typography rules and color variables.
  */
 
 /* =================================================================
-      FONT IMPORT & GLOBAL RESET
+      FONT IMPORT & GLOBAL VARIABLES
    ================================================================= */
    
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:ital,wght@0,400..900;1,400..900&display=swap');
 
-/* VARIABLES */
+/* CSS Custom Properties (Variables) for consistent styling */
 :root {
    /* COLORS */
-   --color-main-bg: #fff;
-   --color-accent: #4C5FD5; /* Links & Sign-In btn */
-   --color-hero-bg: #dadbf1;
-   --color-sandwich-bread: #000000; /* Header & Footer bg */
+   --color-main-bg: #fff;                     /* Primary background color (white) */
+   --color-accent: #4C5FD5;                  /* Accent color for links and buttons */
+   --color-hero-bg: #dadbf1;                 /* Background color for the hero section */
+   --color-sandwich-bread: #000000;          /* Header and Footer background color (black) */
 
    /* FONT PROPERTIES */
-   --font: 'Schibsted Grotesk';
-   --font-heading-bold-weight: 650;
-   --font-heading-hero-weight: 500;
-   --font-default-weight: 400;
-   --font-default-size: 23px;
-   --font-footer-size: 16px;
+   --font: 'Schibsted Grotesk', sans-serif;  /* Default font family for the site */
+   --font-heading-bold-weight: 650;          /* Bold weight for headings */
+   --font-heading-hero-weight: 500;          /* Medium weight for the hero heading */
+   --font-default-weight: 400;               /* Regular weight for body text */
+   --font-default-size: 23px;                /* Base font size */
+   --font-footer-size: 16px;                 /* Font size for footer elements */
 }
 
-/* APPLY TO ALL */
+/* =================================================================
+      GLOBAL RESET & BASE STYLES
+   ================================================================= */
+
+/* Universal selector to apply base styles to all elements */
 * {
    margin: 0;
-   box-sizing: border-box;
-   font-family: var(--font);
-   overflow-x: hidden;
+   box-sizing: border-box;            /* Ensures padding and borders are included in element's total width/height */
+   font-family: var(--font);          /* Applies the default font */
+   overflow-x: hidden;                /* Prevents horizontal scrolling */
 }
-
 
 /* =================================================================
       TYPOGRAPHY
    ================================================================= */
 
-/* --- GENERAL LINKS --- */
+/* --- General Links --- */
 a {
    text-decoration: none;
-   font-size: calc(var(--font-default-size) - 3px);
+   font-size: calc(var(--font-default-size) - 3px); /* Slightly smaller than default text */
 }
 
-/* --- HEADINGS & PARAGRAPHS --- */
+/* --- Headings & Paragraphs --- */
 p {
    font-size: var(--font-default-size);
 }
+
 h1 {
    font-weight: var(--font-heading-hero-weight);
 }
+
 h2 {
    font-size: var(--font-default-size);
    font-weight: var(--font-heading-bold-weight);
 }
+
 h3 {
    font-size: var(--font-default-size);
    font-weight: var(--font-default-weight);
 }
+
+/* Common styling for all heading levels */
 h1, h2, h3 {
-   letter-spacing: -1px;
+   letter-spacing: -1px; /* Reduces space between letters for a tighter look */
 }

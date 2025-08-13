@@ -1,13 +1,15 @@
 /*
- *  FILE: index-style.css
+ *  FILE: index-styles.css
  *  DESCRIPTION:
- *  - Defines styles for the header.
+ *  - Defines styles for the main content of the index page,
+ *    including the hero banner and content grid.
 */
 
 /* =================================================================
-        BACKGROUND, COLORS, & GENERAL LAYOUT
+        MAIN CONTENT TYPOGRAPHY
    ================================================================= */
 
+/* Set default text color for main content area */
 main a, 
 main p, 
 main h2, 
@@ -15,40 +17,38 @@ main h3 {
     color: var(--color-sandwich-bread);
 }
 
-
 /* =================================================================
         HERO BANNER
    ================================================================= */
-
-/* CENTERED */
 .hero-banner {
     background-color: var(--color-hero-bg);
-    padding: 6rem 1rem 7rem 1rem;
+    padding: 6rem 1rem 7rem;
 }
 
-/* HERO-CONTENT */
+/* Flex container to center hero content */
 .hero-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2.5rem;
-    width: 100%;
     max-width: 90vw;
     margin: 0 auto;
 }
 
-/* HERO-CONTENT ITEMS */
+/* --- Hero Search Bar --- */
 .hero-search {
     width: 90vw;
 }
+
 .hero-search input {
     width: 100%;
     font-size: 20px;
-    padding: 1.25rem 1rem 1.25rem 1rem;
-    border: 1px #000 solid;
+    padding: 1.25rem 1rem;
+    border: 1px solid #000;
     border-radius: 4px;
-    /* SEARCH ARROW ICON */
+
+    /* Search arrow icon using a background image */
     background-image: url('../assets/icons/main content/arrow-right-stroke.png');
     background-repeat: no-repeat;
     background-position: right 0.5rem center;
@@ -56,118 +56,123 @@ main h3 {
 
     transition: border 0.3s ease;
 }
-.hero-search input:focus, .hero-search input:hover {
-    border: 1px var(--color-accent) solid;
-}
 
+/* Highlight the search bar on focus or hover */
+.hero-search input:focus, 
+.hero-search input:hover {
+    border: 1px solid var(--color-accent);
+}
 
 /* =================================================================
-        MAIN CONTENT
+        MAIN CONTENT GRID
    ================================================================= */
 
-/* CONTENT GRID */
+/* Grid container for content items */
 .main-content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr; /* Single column layout on mobile */
     gap: 5rem;
-    padding: 6.5rem 1.15rem 6.5rem 1.15rem;
+    padding: 6.5rem 1.15rem;
 }
-/* GRID ITEM */
+
+/* Individual grid item layout */
 .content-item {
     display: flex;
-    align-items: start;
+    align-items: start; /* Aligns icons and text to the top */
     gap: 1.5rem;
 }
+
+/* Text container within a grid item */
 .content-text {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-
     line-height: 2rem;
 }
+
 .content-text a {
     color: var(--color-accent);
 }
+
 .content-text a:hover {
     text-decoration: underline;
 }
 
-/* GRID IMAGES */
+/* Grid item icons */
 .item-icon {
     max-width: 5rem;
     aspect-ratio: 1 / 1;
     object-fit: contain;
 }
 
-
 /* =================================================================
         FLOATING HELP BUTTON
    ================================================================= */
-
 .btn-help {
     z-index: 999;
-    position: fixed;
+    position: fixed; /* Sticks to the viewport */
     bottom: 1.7%;
     right: 1rem;
-
-    border: none;
-    background-color: var(--color-accent);
-
+    
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-    padding: 0.7rem 1rem 0.7rem 1rem;
-    border-radius: 50px;
-
+    
+    background-color: var(--color-accent);
     color: #fff;
     font-size: var(--font-footer-size);
     font-weight: var(--font-heading-bold-weight);
+    
+    padding: 0.7rem 1rem;
+    border-radius: 50px;
+    border: none;
 }
+
 .btn-help img {
     width: 25px;
 }
-
 
 /* =================================================================
         MEDIA QUERIES
    ================================================================= */
 
-@media screen and (min-width: 500px) { /* BIG HERO HEADING + MAIN SPACING */
-    /* MAKE HERO HEADING BIG */
+/* On wider mobile screens, increase heading size and padding */
+@media screen and (min-width: 500px) {
     .hero-content h1 {
         font-size: 3.3rem;
     }
-    /* MAIN CONTENT INLINE PADDING */
     .main-content {
-        padding: 6.5rem 3.5rem 6.5rem 3.5rem;
+        padding: 6.5rem 3.5rem;
     }
 }
 
-@media screen and (min-width: 800px) { /* TABLETS */
-    /* MAKE HERO HEADING BIGGER */
+/* On tablets and larger screens */
+@media screen and (min-width: 800px) {
+    /* Increase hero heading size */
     .hero-content h1 {
         font-size: 4.5rem;
     }
-    /* NARROWER GAP */
+
+    /* Adjust gaps and search bar width */
     .hero-banner, .hero-content {
         gap: 2.15rem;
     }
-    /* FIXED SEARCHBAR WIDTH */
     .hero-search {
         max-width: 47rem;
     }
-    /* TWO COLUMN GRID */
+
+    /* Switch to a two-column grid for main content */
     .main-content {
         max-width: 110rem;
         margin: 0 auto;
-
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr; /* Two equal columns */
         gap: 5rem;
-        padding: 10rem 5rem 6.5rem 5rem;
+        padding: 10rem 5rem 6.5rem;
     }
-    /* GRID IMAGES */
+
+    /* Slightly reduce icon size on larger screens */
     .item-icon {
         max-width: 4.5rem;
     }
