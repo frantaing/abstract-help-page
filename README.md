@@ -48,7 +48,7 @@ no frameworks or tooling (e.g., no React, Tailwind, or Webpack)
 
 ## ⏳ status
 
-this is **a work in progress**. pray i finish it 🙏
+this is **completed**! hooray!
 
 #### page structure (HTML)
 - [X] build the header (mobile)
