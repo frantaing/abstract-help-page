@@ -1,79 +1,79 @@
 # Abstract website help page recreation (Frontend Practice)
 
-a responsive front-end recreation of the [Abstract](https://help.goabstract.com/hc/en-us) website help page. this is a self-directed challenge from [Frontend Practice](https://www.frontendpractice.com/projects/abstract) to improve my layout, design, and vanilla javascript skills. also, because it's fun.
+A responsive front-end recreation of the [Abstract](https://help.goabstract.com/hc/en-us) website help page. This is a self-directed challenge from [Frontend Practice](https://www.frontendpractice.com/projects/abstract) to improve my layout, design, and vanilla JavaScript skills. Also, because it's fun.
 
 👉 [Github Page](https://overuseofrem.github.io/abstract-help-page/)
 
 <br>
 
-## 📌 about the project
+## 📌 About the project
 
-the goal is to recerate the structure, appearance, and behavior of the **Abstract website**. specifically, *only* their **help** page.
-this is a **pure front-end project**: no frameworks, libraries, or build tools. just pure **html**, **css**, and **javascript**. 🙃
+The goal is to recerate the structure, appearance, and behavior of the **Abstract website**. Specifically, *only* their **help** page.
+This is a **pure front-end project**: no frameworks, libraries, or build tools. Just pure **HTML**, **CSS**, and **JavasSript**. 🙃
 
-> ❗this is a personal practice project! all banding, content, and design elements remain the property of Abstract. this clone is for educational, recreational, and non-commercial use only.
-> images, and text may be replaced with placeholders or free-to-use alternatives.
-
-<br>
-
-## 🍮 features?
-
-- mobile-first layout
-- responsive design
-- page receration (depends lol)
-- vanilla HTML/CSS/javascript only
-- layout, hover states, and interaction mimicry (attempt)
+> ❗This is a personal practice project! all banding, content, and design elements remain the property of Abstract. this clone is for educational, recreational, and non-commercial use only.
+> Images, and text may be replaced with placeholders or free-to-use alternatives.
 
 <br>
 
-## 🔧 tech stack
+## 🍮 Features
+
+- Mobile-first layout
+- Responsive design
+- Page receration (depends lol)
+- Vanilla HTML/CSS/JavaScript only
+- Layout, hover states, and interaction mimicry (attempt)
+
+<br>
+
+## 🔧 Tech stack
 
 - HTML5
 - CSS3
 - javascript
 
-no frameworks or tooling (e.g., no React, Tailwind, or Webpack)
+No frameworks or tooling (e.g., no React, Tailwind, or Webpack)
 
 <br>
 
-## 📷 sources i used
+## 📷 Sources
 
 - [Frontend Practice](https://www.frontendpractice.com/projects/abstract) challenge site
-- the [Abstract website](https://help.goabstract.com/hc/en-us)
-- for images: [pexels](https://www.pexels.com/) and [unsplash](https://unsplash.com/)
-- for the website logo: [boxicons](https://boxicons.com/)
-- for the colored icons: from [prosymbols](https://www.flaticon.com/authors/prosymbols) at [flaticon](https://www.flaticon.com/)
+- The [Abstract website](https://help.goabstract.com/hc/en-us)
+- For images: [pexels](https://www.pexels.com/) and [unsplash](https://unsplash.com/)
+- For the website logo: [boxicons](https://boxicons.com/)
+- For the colored icons: from [prosymbols](https://www.flaticon.com/authors/prosymbols) at [flaticon](https://www.flaticon.com/)
 
 <br>
 
-## ⏳ status
+## ⏳ Status
 
-this is **completed**! hooray!
+This is **completed**! hooray!
 
-#### page structure (HTML)
-- [X] build the header (mobile)
-- [X] build the header (desktop)
-- [X] build the hero(?) banner (the section prior to the main section)
-- [X] build the main content
-- [X] build the footer
+#### Page structure (HTML)
+- [X] Build the header (mobile)
+- [X] Build the header (desktop)
+- [X] Build the hero(?) banner (the section prior to the main section)
+- [X] Build the main content
+- [X] Build the footer
 
 
-#### styling (CSS)
-- [X] style the header (mobile)
-- [X] style the header (desktops)
-- [X] style the main content (mobile/desktop)
-- [X] style the footer
-- [X] style the floating 'help' button
-- [X] hover states, animations, etc
+#### Styling (CSS)
+- [X] Style the header (mobile)
+- [X] Style the header (desktops)
+- [X] Style the main content (mobile/desktop)
+- [X] Style the footer
+- [X] Style the floating 'help' button
+- [X] Hover states, animations, etc
 
-#### interactivity (JS)
-- [X] header hamburger menu?
-- [X] header search?
+#### Interactivity (JS)
+- [X] Header hamburger menu?
+- [X] Header search?
 
-#### final stuff
-- [X] final code cleanup and commenting
-- [X] deploy the site to Github Pages
-- [X] add the live site link to the top of the README
+#### Final stuff
+- [X] Final code cleanup and commenting
+- [X] Deploy the site to Github Pages
+- [X] Add the live site link to the top of the README
 
 <br>
 
