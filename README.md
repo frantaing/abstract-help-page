@@ -48,7 +48,7 @@ No frameworks or tooling (e.g., no React, Tailwind, or Webpack)
 
 ## ⏳ Status
 
-This is **completed**! hooray!
+This is **completed**!
 
 #### Page structure (HTML)
 - [X] Build the header (mobile)
