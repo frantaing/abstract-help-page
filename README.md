@@ -11,7 +11,7 @@ A responsive front-end recreation of the [Abstract](https://help.goabstract.com/
 The goal is to recerate the structure, appearance, and behavior of the **Abstract website**. Specifically, *only* their **help** page.
 This is a **pure front-end project**: no frameworks, libraries, or build tools. Just pure **HTML**, **CSS**, and **JavasSript**. 🙃
 
-> ❗This is a personal practice project! all banding, content, and design elements remain the property of Abstract. this clone is for educational, recreational, and non-commercial use only.
+> ❗This is a personal practice project! all banding, content, and design elements remain the property of Abstract. This clone is for educational, recreational, and non-commercial use only.
 > Images, and text may be replaced with placeholders or free-to-use alternatives.
 
 <br>
