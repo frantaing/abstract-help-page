@@ -40,9 +40,9 @@ No frameworks or tooling (e.g., no React, Tailwind, or Webpack)
 
 - [Frontend Practice](https://www.frontendpractice.com/projects/abstract) challenge site
 - The [Abstract website](https://help.goabstract.com/hc/en-us)
-- For images: [pexels](https://www.pexels.com/) and [unsplash](https://unsplash.com/)
-- For the website logo: [boxicons](https://boxicons.com/)
-- For the colored icons: from [prosymbols](https://www.flaticon.com/authors/prosymbols) at [flaticon](https://www.flaticon.com/)
+- For images: [Pexels](https://www.pexels.com/) and [Unsplash](https://unsplash.com/)
+- For the website logo: [Boxicons](https://boxicons.com/)
+- For the colored icons: from [Prosymbols](https://www.flaticon.com/authors/prosymbols) at [Flaticon](https://www.flaticon.com/)
 
 <br>
 
